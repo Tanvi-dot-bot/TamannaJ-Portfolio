@@ -4,6 +4,8 @@ import { Canvas } from '@react-three/fiber'
 import React, { Suspense } from 'react'
 import CanvasLoader from '../components/CanvasLoader'
 import { Leva, useControls } from 'leva'
+import { useMediaQuery } from 'react-responsive'
+import { calculateSizes } from '../constants/index'
 
 
 const Hero = () => {
@@ -16,7 +18,7 @@ const Hero = () => {
             },
             positionY:{
                 value: 2.5,
-                min: -10,
+                min: -20,
                 max: 10,
             },
             positionZ:{
@@ -46,6 +48,10 @@ const Hero = () => {
             },
         }
     );
+    const isMobile = useMediaQuery({maxWidth: 768});
+    const isTablet = useMediaQuery({minWidth: 768, maxWidth: 1024});
+    const isSmall = useMediaQuery({maxWidth: 440});
+    const sizes = calculateSizes(isSmall, isMobile, isTablet);
   return (
     <section className="min-h-screen w-full flex flex-col relative">
         <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 
@@ -57,14 +63,14 @@ const Hero = () => {
         </div>
         <div className="w-full h-full absolute inset-0">
         <Leva/>
-           <Canvas className="w-full h-full">
+           <Canvas className="w-full h-full" antialias >
             <Suspense fallback={<CanvasLoader/>}>
             <perspectiveCamera makeDefault position={[0, 0, 30]}/>
             <HackerRoom 
             // scale={0.02}
-            position={[x.positionX, x.positionY, x.positionZ, , ]}
-            rotation={[x.rotationX, x.rotationY, x.rotationZ]}
-            scale={[x.scale,x.scale,x.scale]}
+            position={[1,isMobile ? -5 : -11, -15 ]}
+            rotation={[0, Math.PI, 0]}
+            scale={isMobile ? 0.08 : 0.1}
             />
           
             <ambientLight intensity={1}/>
