@@ -1,3 +1,5 @@
+
+
 export const navLinks = [
     {
       id: 1,
@@ -250,9 +252,9 @@ export const navLinks = [
     return {
       deskScale: isSmall ? 0.05 : isMobile ? 0.06 : isCustom ? 0.065  : 0.07,
       deskPosition:isMobile ? [0.3, -6, -10] :isCustom ? [0.6, -7, -10]  : [0.35, -7.3, -10],
-      cubePosition: isSmall ? [4, -5, 0] : isMobile ? [5, -5, 0] : isTablet ? [5, -5, 0] : [9, -5.5, 0],
-      reactLogoPosition: isSmall ? [3, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [5, 4, 0] : [12, 3, 0],
-      ringPosition: isSmall ? [-5, 7, 0] : isMobile ? [-10, 10, 0] : isTablet ? [-12, 10, 0] : [-24, 10, 0],
+      cubePosition: isSmall ? [4, -7, -15] : isMobile ? [5, -5, 0] :isCustom?[10, -8, -13] :isTablet ? [5, -5, 0] : [9, -5.5, 0],
+      reactLogoPosition: isSmall ? [5, 4, -17] : isMobile ? [5, 4, 0] :isCustom ? [9, 4, -15] : isTablet ? [13, 9, -17] : [17, 6, -15],
+      ringPosition: isSmall ? [-5, 7, 0] : isMobile ? [-10, 10, 0] :isCustom ? [-21, 18, -27] : isTablet ? [-12, 10, 0] : [-24, 10, 0],
       targetPosition: isSmall ? [-4, -9, -10] : isCustom ? [-8, -10, -10] : isMobile ? [-9, -10, -10] : isTablet ? [-11, -7, -10] : [-13, -10, -10],
     };
   };
