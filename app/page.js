@@ -1,5 +1,7 @@
 
 import About from "./sections/About";
+import Contacts from "./sections/Contacts";
+import Footer from "./sections/Footer";
 import Hero from "./sections/Hero";
 import Navbar from "./sections/Navbar";
 import Projects from "./sections/Projects";
@@ -11,6 +13,8 @@ export default function Home() {
       <Hero/>
       <About/>
       <Projects/>
+      <Contacts/>
+      <Footer/>
     </main> 
     )
 
