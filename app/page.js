@@ -1,6 +1,7 @@
 
 import About from "./sections/About";
 import Contacts from "./sections/Contacts";
+import Experience from "./sections/Experience";
 import Footer from "./sections/Footer";
 import Hero from "./sections/Hero";
 import Navbar from "./sections/Navbar";
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero/>
       <About/>
       <Projects/>
+      <Experience/>
       <Contacts/>
       <Footer/>
     </main> 
