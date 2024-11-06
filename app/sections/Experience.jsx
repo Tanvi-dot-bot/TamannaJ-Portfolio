@@ -1,4 +1,5 @@
 "use client"
+import dynamic from 'next/dynamic'
 import React, { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { workExperiences } from '../constants'
@@ -7,7 +8,10 @@ import CanvasLoader from '../components/CanvasLoader'
 import Developer from '../components/Developer'
 import { useState } from 'react'
 import { useMediaQuery } from 'react-responsive'
-import PhExperience from '../sections/PhExperience'
+
+const PhExperience = dynamic(() => import('../sections/PhExperience'), { 
+  ssr: false
+})
 const Experience = () => {
   const[animationName,setAnimationName]=useState("idle")
   const isBig = useMediaQuery({ minWidth: 1024 });
