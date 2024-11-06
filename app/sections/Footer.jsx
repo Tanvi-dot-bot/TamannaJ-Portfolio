@@ -11,11 +11,14 @@ const Footer = () => {
         <p>privacy policy</p>
     </div>
     <div className="flex gap-3">
+        <a href="https://github.com/Ahmednaf03" target="_blank">
         <div className="social-icon">
             <img src="../assets/github.svg" alt="github" 
             className="w-1/2 h-1/2"/>
            
         </div>
+        </a>
+
         <div className="social-icon">
             <img src="../assets/twitter.svg" alt="twitter" 
             className="w-1/2 h-1/2"/>
