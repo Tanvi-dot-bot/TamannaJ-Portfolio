@@ -15,7 +15,7 @@ const Experience = () => {
       <div className="w-full text-white-600">
         <h3 className="head-text">My Major Technologies</h3>
         <div className="work-container">
-       {isBig?   <div className="work-canvas">
+       {isBig &&  <div className="work-canvas">
             <Canvas 
             gl={{antialias:false}}>
             <ambientLight intensity={7}/>
@@ -28,7 +28,7 @@ const Experience = () => {
             animationName={animationName}/>
             </Suspense>
             </Canvas>
-          </div> :null}
+          </div> }
           <div className="work-content">
             <div className="sm:py-10 py-5 sm:px-5 px-2.5">
               {workExperiences.map(({id,name,pos,duration,
