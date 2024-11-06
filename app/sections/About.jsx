@@ -22,7 +22,7 @@ const About = () => {
                    <img src="../assets/grid1.png" alt="grid-1" 
                    className="w-full sm:h-[276px] h-fit object-contain"/> 
                    <div className="">
-                    <p className="grid-headtext">Hi I'm Ahmed</p>
+                    <p className="grid-headtext">Hi I&apos;m Ahmed</p>
                     <p className="grid-subtext"> with 1 year of experience i have honed
                         my skills in both front-end and back-end development as a freelancing developer.
                     </p>
@@ -60,7 +60,7 @@ const About = () => {
                     </div>
                     <div>
                         <p className="grid-headtext"> I work remotely across timezones</p>
-                        <p className="grid-subtext">I'm based in india with Remote work availability.</p>
+                        <p className="grid-subtext">I&apos;m based in india with Remote work availability.</p>
                         <Button name="contact me" isBeam containerClass="w-full mt-10" />
                     </div>
                 </div>
