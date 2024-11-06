@@ -1,5 +1,6 @@
 import dynamic from "next/dynamic";
 // import About from "./sections/About";
+import PhExperience from "./sections/PhExperience";
 import Contacts from "./sections/Contacts";
 const Experience = dynamic(() => import('./sections/Experience'), { 
   ssr: false
@@ -11,7 +12,9 @@ const About = dynamic(() => import('./sections/About'), {
   ssr: false
 })
 
+
 export default function Home() {
+
   return (
     <main className="max-w-7xl mx-auto relative">
       <Navbar/>
