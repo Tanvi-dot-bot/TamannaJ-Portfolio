@@ -14,7 +14,8 @@ const Experience = () => {
         <h3 className="head-text">My Major Technologies</h3>
         <div className="work-container">
           <div className="work-canvas">
-            <Canvas>
+            <Canvas 
+            gl={{antialias:false}}>
             <ambientLight intensity={7}/>
             <spotLight position={[10, 10, 10]} angle={0.15} 
             penumbra={1}/>
