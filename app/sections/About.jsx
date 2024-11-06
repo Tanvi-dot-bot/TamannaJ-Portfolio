@@ -72,7 +72,7 @@ const About = () => {
                     <div>
                         <p className="grid-headtext"> My passion for coding</p>
                         <p className="grid-subtext">I love solving problems and creating things through code
-                            and I'm always looking for new challenges.
+                            and I&apos;m always looking for new challenges.
                         </p>
                     </div>
                 </div>
