@@ -6,14 +6,16 @@ import { OrbitControls } from '@react-three/drei'
 import CanvasLoader from '../components/CanvasLoader'
 import Developer from '../components/Developer'
 import { useState } from 'react'
+import { useMediaQuery } from 'react-responsive'
 const Experience = () => {
   const[animationName,setAnimationName]=useState("idle")
+  const isBig = useMediaQuery({ minWidth: 1024 });
   return (
     <section className="c-space my-20" id="exp">
       <div className="w-full text-white-600">
         <h3 className="head-text">My Major Technologies</h3>
         <div className="work-container">
-          <div className="work-canvas">
+       {isBig?   <div className="work-canvas">
             <Canvas 
             gl={{antialias:false}}>
             <ambientLight intensity={7}/>
@@ -26,7 +28,7 @@ const Experience = () => {
             animationName={animationName}/>
             </Suspense>
             </Canvas>
-          </div>
+          </div> :null}
           <div className="work-content">
             <div className="sm:py-10 py-5 sm:px-5 px-2.5">
               {workExperiences.map(({id,name,pos,duration,
