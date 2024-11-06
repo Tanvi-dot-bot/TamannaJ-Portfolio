@@ -1,11 +1,13 @@
-
-import About from "./sections/About";
+import dynamic from "next/dynamic";
+// import About from "./sections/About";
 import Contacts from "./sections/Contacts";
 import Experience from "./sections/Experience";
 import Footer from "./sections/Footer";
 import Hero from "./sections/Hero";
 import Navbar from "./sections/Navbar";
-import Projects from "./sections/Projects";
+const About = dynamic(() => import('./sections/About'), { 
+  ssr: false
+})
 
 export default function Home() {
   return (
