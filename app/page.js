@@ -1,7 +1,9 @@
 import dynamic from "next/dynamic";
 // import About from "./sections/About";
 import Contacts from "./sections/Contacts";
-import Experience from "./sections/Experience";
+const Experience = dynamic(() => import('./sections/Experience'), { 
+  ssr: false
+})
 import Footer from "./sections/Footer";
 import Hero from "./sections/Hero";
 import Navbar from "./sections/Navbar";

@@ -24,7 +24,7 @@ const Developer =({animationName="idle",...props})=> {
     clappingAnimation[0],victoryAnimation[0]],groupRef)
   useEffect(()=>{
       actions[animationName].reset().fadeIn(0.5).play()
-      return ()=>actions[animationName].fadeOut(0.5)
+      // return ()=>actions[animationName].fadeOut(0.5)
   },[animationName])
   return (
     <group {...props} dispose={null} ref={groupRef}>
