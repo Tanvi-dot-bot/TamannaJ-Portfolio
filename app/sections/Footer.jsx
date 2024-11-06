@@ -14,6 +14,7 @@ const Footer = () => {
         <div className="social-icon">
             <img src="../assets/github.svg" alt="github" 
             className="w-1/2 h-1/2"/>
+           
         </div>
         <div className="social-icon">
             <img src="../assets/twitter.svg" alt="twitter" 
