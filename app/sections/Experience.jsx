@@ -5,10 +5,12 @@ import { Canvas } from '@react-three/fiber'
 import { workExperiences } from '../constants'
 import { OrbitControls } from '@react-three/drei'
 import CanvasLoader from '../components/CanvasLoader'
-import Developer from '../components/Developer'
+// import Developer from '../components/Developer'
 import { useState } from 'react'
 import { useMediaQuery } from 'react-responsive'
-
+const Developer = dynamic(() => import('../components/Developer'), { 
+  ssr: false
+})
 const PhExperience = dynamic(() => import('../sections/PhExperience'), { 
   ssr: false
 })
