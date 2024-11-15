@@ -3,7 +3,6 @@ import HackerRoom from '@/app/components/HackerRoom'
 import { Canvas } from '@react-three/fiber'
 import React, { Suspense } from 'react'
 import CanvasLoader from '../components/CanvasLoader'
-import { Leva, useControls } from 'leva'
 import { useMediaQuery } from 'react-responsive'
 import { calculateSizes } from '../constants/index'
 import Target from '../components/Target'
@@ -35,7 +34,6 @@ const Hero = () => {
         <Canvas className="w-full h-full" gl={{ antialias: false }}>
           <Suspense fallback={<CanvasLoader />}>
             {/* To hide controller */}
-            <Leva hidden />
             <PerspectiveCamera makeDefault position={[0, 0, 30]} />
 
             <HeroCamera isMobile={isMobile}>
