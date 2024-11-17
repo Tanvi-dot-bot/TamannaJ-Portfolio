@@ -37,7 +37,7 @@ const About = () => {
                     <div>
                         <p className="grid-headtext">Tech Stack</p>
                         <p className="grid-subtext"> 
-                            i specialize in JavaScript/TypeScript and SpringBoot with a focus on React and Next.js ecosystem. </p>
+                            i specialize in c++ and python and intermediate level knowledge in data structure and algorithms </p>
                     </div>
                 </div>
              </div>
@@ -54,7 +54,7 @@ const About = () => {
                 showGraticules
                 globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
                 bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
-                labelsData={[{ lat: 13, lng: 80, text: 'i am here', color: 'white', size: 15 }]}
+                labelsData={[{ lat: 28, lng: 77, text: 'i am here', color: 'white', size: 15 }]}
               />
 
                     </div>
@@ -86,7 +86,7 @@ const About = () => {
                         <div 
                         className="copy-container" onClick={handleCopy} >
                             <img src={hasCopied ? "../assets/tick.svg" : "../assets/copy.svg"} alt="copy" />
-                            <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">ahamednafees777@gmail.com</p>
+                            <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">tanvi.jk29@gmail.com</p>
                         </div>
                     </div>
                 </div>
