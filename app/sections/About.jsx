@@ -6,7 +6,7 @@ import { useState } from 'react';
 const About = () => {
     const[hasCopied,setHasCopied]=useState(false);
     const handleCopy = () => {
-        navigator.clipboard.writeText("ahamednafees777@gamail.com");
+        navigator.clipboard.writeText("tanvi.jk29@gmail.com");
         setHasCopied(true);
     
         setTimeout(() => {
@@ -23,8 +23,8 @@ const About = () => {
                    className="w-full sm:h-[276px] h-fit object-contain"/> 
                    <div className="">
                     <p className="grid-headtext">Hi I&apos;m Tanvi</p>
-                    <p className="grid-subtext"> with 1 year of experience i have honed
-                        my skills in both front-end and back-end development as a freelancing developer.
+                    <p className="grid-subtext"> An sophomore year student at a DU affiliated college with 
+                        multiple internships on content writing and proficiant knowledge in numerous programming languages.  
                     </p>
                    </div>
                 </div>
