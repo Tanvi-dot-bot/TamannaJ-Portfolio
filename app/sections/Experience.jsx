@@ -7,7 +7,6 @@ import { OrbitControls } from '@react-three/drei'
 import CanvasLoader from '../components/CanvasLoader'
 import { useState } from 'react'
 import { useMediaQuery } from 'react-responsive'
-import Developer1 from '../components/Developer1'
 const Developer = dynamic(() => import('../components/Developer'), { 
   ssr: false
 })
@@ -21,12 +20,12 @@ const Experience = () => {
     isBig ?
     <section className="c-space my-20" id="exp">
       <div className="w-full text-white-600">
-        <h3 className="head-text">My Major Technologies</h3>
+        <h3 className="head-text">My Major Skills</h3>
         <div className="work-container">
        <div className="work-canvas">
             <Canvas 
             gl={{antialias:false}}>
-            <ambientLight intensity={3}/>
+            <ambientLight intensity={2}/>
             <spotLight position={[10, 10, 10]} angle={0.15} 
             penumbra={1}/>
             <directionalLight position={[10,10,10]} intensity={0.5}/>

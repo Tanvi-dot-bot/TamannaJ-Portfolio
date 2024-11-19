@@ -266,7 +266,7 @@ export const workExperiences = [
     duration: '3.13.0',
     title: "I am proficient with the fundementals of Python, including object-oriented programming, data structures, and algorithms and automaions.",
     icon: '/assets/python.svg',
-    animation: 'victory',
+    animation: 'clapping',
   },
   {
     id: 2,
@@ -279,11 +279,11 @@ export const workExperiences = [
   },
   {
     id: 3,
-    name: 'HTML5',
-    pos: 'version',
-    duration: '5.2',
-    title: "I use HTML5 because it brings a plethora of powerful features and improvements that make web development more efficient, dynamic, and accessible.",
-    icon: '/assets/html-5.svg',
+    name: 'Content Writing',
+    pos: '',
+    duration: '',
+    title: "I have done multiple internships on content writing such blogs, articles and for social media handles.",
+    icon: '/assets/writing.svg',
     animation: 'salute',
   },
 ];
