@@ -7,6 +7,7 @@ import { OrbitControls } from '@react-three/drei'
 import CanvasLoader from '../components/CanvasLoader'
 import { useState } from 'react'
 import { useMediaQuery } from 'react-responsive'
+import Developer1 from '../components/Developer1'
 const Developer = dynamic(() => import('../components/Developer'), { 
   ssr: false
 })
@@ -25,10 +26,10 @@ const Experience = () => {
        <div className="work-canvas">
             <Canvas 
             gl={{antialias:false}}>
-            <ambientLight intensity={7}/>
+            <ambientLight intensity={3}/>
             <spotLight position={[10, 10, 10]} angle={0.15} 
             penumbra={1}/>
-            <directionalLight position={[10,10,10]} intensity={1}/>
+            <directionalLight position={[10,10,10]} intensity={0.5}/>
             <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2}/>
             <Suspense fallback={<CanvasLoader />}>
             <Developer position-y={-3} scale={3} 

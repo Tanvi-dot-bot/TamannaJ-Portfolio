@@ -19,15 +19,15 @@ const Contacts = () => {
     setLoading(true);
     try{
      await emailjs.send(
-        "service_vns79by",
-        "template_mwvh7rh",
+        "service_c5o53x2",
+        "template_x3zm876",
         {from_name:form.name,
-          to_name:"Ahmed",
+          to_name:"Tanvi",
           from_email:form.email,
-          to_email:"ahamednafees777@gamail.com",
+          to_email:"tanvi.jk29@gmail.com",
           message:form.message
           },
-          "dvLuWBSnIDOvr1sv9"),
+          "YSPa0NJy4wYYNNbEn"),
         setLoading(false);
         alert("Thank you. I will get back to you as soon as possible");
         setForm({
