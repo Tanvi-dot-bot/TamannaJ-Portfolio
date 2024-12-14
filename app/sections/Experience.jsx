@@ -13,7 +13,6 @@ const Developer = dynamic(() => import('../components/Developer'), {
 const PhExperience = dynamic(() => import('../sections/PhExperience'), { 
   ssr: false
 })
-// import PhExperience from '../sections/PhExperience'
 const Experience = () => {
   const[animationName,setAnimationName]=useState("idle")
   const isBig = useMediaQuery({ minWidth: 1024 });

@@ -38,7 +38,7 @@ const Hero = () => {
 
             <HeroCamera isMobile={isMobile}>
               {isBig && <HackerRoom scale={sizes.deskScale} position={sizes.deskPosition} rotation={[0.1, -Math.PI, 0]} />}
-              {/* <HackerRoom scale={sizes.deskScale} position={sizes.deskPosition} rotation={[0.1, -Math.PI, 0]} /> */}
+              
             </HeroCamera>
 
             <group>
